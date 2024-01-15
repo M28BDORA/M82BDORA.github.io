@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta para la guera</title>
+  <style>
+    .carta {
+      width: 200px;
+      height: 300px;
+      position: relative;
+      background-color: #ff0000; /* Red background color */
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .carta:hover {
+      transform: rotateY(180deg);
+    }
+
+    .contenido {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform: rotateY(0deg);
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #000000; /* Black text color */
+      font-style: italic; /* Italic font style */
+    }
+
+    .contenido p {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .cara-trasera {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="carta">
+  <div class="contenido">
+    <p>Clickea para abrir la carta</p>
+  </div>
+  <div class="contenido cara-trasera">
+    <p>Se que soy un completo niño raro se que talvez hasta te incomode por mis acciones 
+Se que te molesta que sea grosero pero no lo hago con cualquier persona lo hago con las personas que les tengo confianza.
+Y talvez no creo que tenga oportunidad contigo pero almenos lo intento se que no te hablo pero es por que me pongo nervioso .se que talvez sea un completo frio y culero , pero contigo se olvida eso me vuelvo blando y cariñoso.
+Hasta te regale 1500 pesos en el regalo de hoy por que te amo y no se la verdad quiero todo contigo y solo quiero que estes feliz solo quiero que sea la persona que tenga cosas y que seas la envidia de tus amigas talvez este feo pero te juro y te prometo que no te va a faltar nada  y solo quiero decirte 
+                 ERES UNA ZANAHORIA </p>
+  </div>
+</div>
+
+</body>
+</html>
